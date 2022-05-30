@@ -1,0 +1,103 @@
+.error {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--primaryDarkColor);
+}
+
+.section-user {
+  width: 24rem;
+  margin: 0 auto;
+
+  position: relative;
+  text-align: center;
+  background: var(--mainWhite);
+  border-radius: var(--mainBorderRadius);
+  box-shadow: var(--lightShadow);
+  margin-bottom: 2.5rem;
+}
+
+.image-user {
+  margin: 0 auto;
+  width: 25%;
+  border-radius: 50%;
+}
+
+.message-users {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--mainRed);
+}
+.user-info {
+  margin-top: 1.25rem;
+  color: var(--mainBlack);
+}
+.user-info-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.user-info-icons__icon {
+  background: transparent;
+  border: transparent;
+  font-size: 1.25rem;
+  color: var(--darkGrey);
+  cursor: pointer;
+}
+
+.user-info-icons__icon:hover {
+  color: var(--primaryColor);
+}
+
+.user-info__name {
+  font-size: 1.5rem;
+}
+/* 
+====== 
+btn
+======
+*/
+.svg {
+  pointer-events: none;
+}
+
+.create-user {
+  padding: 0.8rem 1.2rem;
+  background-color: var(--primaryColor);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  color: var(--mainWhite);
+}
+.get-users {
+  padding: 0.8rem 1.2rem;
+  background-color: var(--primaryColor);
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  color: var(--mainWhite);
+}
+.get-users:hover {
+  background-color: var(--primaryLightColor);
+  color: var(--mainBlack);
+}
+.user-btn {
+  width: 5rem;
+  padding: 0.4rem 0.8rem;
+  margin-top: 1.15rem;
+  margin-bottom: 1.15rem;
+  background-color: var(--primaryColor);
+  color: var(--offWhite);
+  cursor: pointer;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.user-btn__remove {
+  background-color: var(--primaryDarkColor);
+}
+
+.btn-center {
+  display: block;
+  margin: 0 auto;
+}

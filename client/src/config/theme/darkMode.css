@@ -1,0 +1,10 @@
+.dark-theme-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: var(--mainBlack);
+  background-color: var(--mainWhite);
+}

@@ -1,0 +1,56 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  height: 35rem;
+  z-index: 3;
+  background: white;
+  padding: 1rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  /* display: grid;
+  place-items: center;
+  transition: var(--transition); */
+}
+
+.modal-content {
+  margin-top: 4rem;
+}
+.close-modal-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  color: var(--mainRed);
+}
+
+.updated-form {
+  width: 20rem;
+  margin: 0 auto;
+}
+.user-section {
+  margin-bottom: 1rem;
+}
+.user-section-label {
+  display: block;
+  font-size: 1rem;
+}
+
+.user-section input {
+  width: 20rem;
+  height: 2rem;
+  font-size: 1.25rem;
+}
