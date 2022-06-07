@@ -9,7 +9,7 @@ const darkThemeReducer = (state = initialState, action) => {
     case DARK_THEME:
       return {
         ...state,
-        isDarkTheme: action.payload,
+        isDarkTheme: !state.isDarkTheme,
       };
 
     default:

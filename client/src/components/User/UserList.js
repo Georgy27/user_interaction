@@ -1,15 +1,14 @@
 import React, { useEffect, useMemo, useState } from "react";
 import User from "./User";
-import ModalForm from "./ModalForm";
-import Loading from "../components/Loading";
+import ModalForm from "../ModalForm";
+import Loading from "../Loading";
 
 import UserMessage from "./UserMessage";
-import { fetchUsersSuccess } from "../store/action-creators/userActions";
-import { useHttp } from "../custom hooks/useHttp";
+import { fetchUsersSuccess } from "../../store/action-creators/userActions";
+import { useHttp } from "../../hooks/useHttp";
 import { useDispatch, useSelector } from "react-redux";
-import { closeModal } from "../store/action-creators/modalAction";
+import { closeModal, openModal } from "../../store/action-creators/modalAction";
 // import { searchUser } from "../store/action-creators/userActions";
-import { openModal } from "../store/action-creators/modalAction";
 
 const UserList = () => {
   const { loading, request, error } = useHttp();
@@ -69,7 +68,7 @@ const UserList = () => {
           // (users.length === 0 && !error)
 
           filteredUsers.length > 1 ||
-          users.length >= 0
+          users.length === 0
         ) {
           return (
             <button

@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState, useRef } from "react";
-import "./User.css";
-import { useGlobalContext } from "../context";
+import "./UserStyles.css";
 
 const UserInfo = ({ hoverInfo }) => {
   const { title, value } = hoverInfo;

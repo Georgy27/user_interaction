@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState, useRef } from "react";
-import "./User.css";
-import { useGlobalContext } from "../context";
+import "./UserStyles.css";
 
-const UserBtn = ({ buttons, ChangeHoverInfo }) => {
+const UserButton = ({ buttons, ChangeHoverInfo }) => {
   return (
     <div className="user-info-icons">
       {buttons.map(({ component: Component, title, id, value }) => (
@@ -25,4 +24,4 @@ const UserBtn = ({ buttons, ChangeHoverInfo }) => {
   );
 };
 
-export default UserBtn;
+export default UserButton;

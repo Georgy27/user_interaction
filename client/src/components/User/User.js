@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import "./User.css";
-import UserBtn from "./UserBtn";
+import "./UserStyles.css";
+import UserBtn from "./UserButton";
 import UserInfo from "./UserInfo";
-import { buttons } from "../data/index";
-import { useHttp } from "../custom hooks/useHttp";
+import { buttons } from "../../data/index";
+import { useHttp } from "../../hooks/useHttp";
 // REDUX
 import { useDispatch, useSelector } from "react-redux";
 import {
   removeUser,
   setCurrentUser,
-} from "../store/action-creators/userActions";
-import { openModal } from "../store/action-creators/modalAction";
+} from "../../store/action-creators/userActions";
+import { openModal } from "../../store/action-creators/modalAction";
 const User = ({ user }) => {
   const [hoverInfo, setHoverInfo] = useState({});
 

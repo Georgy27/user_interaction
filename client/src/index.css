@@ -28,6 +28,7 @@ Variables
 .dark-theme {
   --mainWhite: #222;
   --mainBlack: #ececec;
+  --mainGrey: var(--darkGrey);
 }
 
 /* .light-theme {

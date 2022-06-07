@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./SearchForm.css";
-import { useGlobalContext } from "../context";
 import { useDispatch, useSelector } from "react-redux";
 import { searchUser } from "../store/action-creators/userActions";
 const SearchForm = () => {

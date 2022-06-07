@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Modal from "../module/Modal";
-import { useHttp } from "../custom hooks/useHttp";
+import Modal from "./Modal";
+import { useHttp } from "../hooks/useHttp";
 import {
   editUser,
   createNewUser,

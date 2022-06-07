@@ -4,7 +4,7 @@ import React from "react";
 import Home from "./pages/Home";
 // import components
 
-import { DarkMode } from "./config/theme";
+import DarkTheme from "./config/theme/DarkTheme";
 import Navbar from "./components/Navbar";
 
 // redux
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <DarkMode />
+      <DarkTheme />
       <Home />
     </>
   );

@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { handleDarkTheme } from "../../store/thunks/darkMode";
-import "./darkMode.css";
-import { createDarkModeAction } from "../../store/action-creators/darkThemeAction";
 
-export const DarkMode = () => {
+import "./DarkTheme.css";
+import { createDarkThemeAction } from "../../store/action-creators/darkThemeAction";
+
+const DarkTheme = () => {
   const dispatch = useDispatch();
 
   const theme = useSelector((state) => state.darkTheme);
   const { isDarkTheme } = theme; // true or false
 
   const toggleTheme = () => {
-    dispatch(createDarkModeAction(!isDarkTheme));
+    dispatch(createDarkThemeAction());
   };
 
   useEffect(() => {
@@ -32,4 +32,4 @@ export const DarkMode = () => {
   );
 };
 
-// export default DarkMode;
+export default DarkTheme;
